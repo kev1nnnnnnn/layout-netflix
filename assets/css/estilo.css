@@ -1,0 +1,127 @@
+body, .bg-dark {
+    background-color:#1b1b1b!important;
+}
+.navbar {
+    position: relative;
+}
+.navbar .form-control {
+    background-color: #1b1b1b!important;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    max-width: 115px;
+    line-height: 28px;
+    height: 28px;
+}
+
+.navbar img {
+    height: 24px;
+}
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar ul {
+    color: #999998;
+    max-width: 250px;
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 60px;
+    left: -250px;
+    height: calc(100vh -60px);
+    overflow: auto;
+    transition: all 0.5s ease-out;
+    opacity: .5;
+}
+.navbar.sidebar-open ul {
+    left: 0;
+    opacity: 1;
+}
+.navbar ul li {
+    padding: 0.3em 1em;
+}
+.navbar ul li.divider {
+    border-bottom: #999898 1px solid;
+    margin: 0.3em auto;
+}
+.media-avatar img {
+    height: 38px;
+}
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.full-banner {
+    background-image: url(../img/full-banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 120px;
+}
+.full-banner small {
+    color: #999898;
+}
+.full-banner .btn-primary {
+    background-color: #e30f19;
+    border-radius: 0;
+    border: none;
+    min-width: 100px;
+}
+.list-titles h2, footer {
+    color: #999898;
+}
+.list-titles img{
+    min-width:160px;
+}
+
+@media (min-width: 576px) {
+    .full-banner {
+        min-height: 256px;
+    }
+    .navbar .form-control {
+        max-width: 180px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .list-titles img {
+        min-width: 230px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar .bg-dark {
+        background-color: transparent!important;
+        background-image: url(../img/header_gradient.png);
+    }
+    .full-banner {
+        min-height: 50vh;
+    }
+    .full-banner p {
+        color: #999898;
+        max-width: 50vw;
+    }
+    .nav-brand .flex-grow-1 {
+        flex-grow: initial!important;
+    }
+    .navbar ul.nav {
+        flex-grow: 1!important;
+    }
+    .navbar ul .nav  .active{
+        color: #e30f19!important;
+        font-weight: bold;
+    }
+    .navbar img {
+        height: 34px;
+    }
+}
+@media (min-width: 1200px) {
+
+}
